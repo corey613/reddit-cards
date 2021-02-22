@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#headerContent{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleWrapper{
+    width: 70%;
+    text-align: center;
+}
+
+#titleWrapper h1{
+    font-size: 80px;
+    line-height: 1.25;
+}
+
+#headerSub{
+    text-align: center;
+    font-size: 23px;
+    margin: 20px 0;
+}
+
+.chevron{
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+main{
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.cardWrapper{
+    width: 80%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+
+#card1, #card3, #card5{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cardsTextWrapper{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardTitle{
+    font-size: 50px;
+    font-weight: 800;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.cardText{
+    width: 85%;
+    font-size: 23px;
+    line-height: 1.8;
+    overflow: hidden;
+}
+
+.cardsPhoto {
+    width: auto;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cardsPhoto img{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+
+#contact{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#contactTextWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#contactTitle{
+    font-size: 100px;
+    overflow: hidden;
+}
+
+
+#contactSub{
+    font-size: 20px;
+    margin: 10px 0 50px 0;
+    overflow: hidden;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input{
+    width: 700px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    margin: 20px 0;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+textarea{
+    width: 700px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    text-indent: 10px;
+    padding-top: 20px;
+    margin: 20px 0;
+}
+
+
+
+#submitBtn{
+    width: 100px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+#submitBtn:hover{
+    background: rgb(29, 29, 29);
+}
+
+#submitBtn:active{
+    transform: scale(0.95);
+}
+
+
+
+
+footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footerWrapper{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a img{
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+
+nav ul li a img:hover{
+   filter: opacity(0.8);
+}
+
+
+
+@media screen and (max-width: 1182px){
+    #titleWrapper h1{
+        font-size: 55px;
+    }
+
+    #headerSub{
+        font-size: 20px;
+    }
+
+
+    .cardTitle{
+        font-size: 40px;
+    }
+    
+    .cardText{
+        width: 85%;
+        font-size: 16px;
+    }
+    
+
+    #contactTitle{
+        font-size: 70px;
+    }
+    
+    
+    #contactSub{
+        font-size: 18px;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 908px){
+    #titleWrapper h1{
+        font-size: 45px;
+    }
+
+    .cardText{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .cardWrapper{
+        width: 80%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    #card1, #card3, #card5{
+        flex-direction: column;
+    } 
+
+
+    .cardsTextWrapper{
+        width: 100%;
+        height: auto;
+    }
+
+
+    
+.cardsPhoto {
+    width: auto;
+    height: 300px;
+}
+
+.cardsPhoto img{
+    width: 280px;
+    height: 200px;
+}
+
+
+
+
+#contactTitle{
+    font-size: 55px;
+}
+
+
+#contactSub{
+    font-size: 16px;
+}
+
+input{
+    width: 600px;
+}
+
+textarea{
+    width: 600px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 700px){
+    #titleWrapper h1{
+        font-size: 40px;
+    }
+
+    #headerSub{
+        font-size: 13px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 601px){
+    #contactTitle{
+        font-size: 40px;
+    }
+    
+    
+    #contactSub{
+        font-size: 12px;
+    }
+    
+    input{
+        width: 400px;
+    }
+    
+    textarea{
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 445px){
+
+
+
+
+    .cardsPhoto {
+        height: 400px;
+    }
+    
+    .cardsPhoto img{
+        width: 280px;
+        height: 160px;
+    }
+
+    #contactTitle{
+        font-size: 30px;
+    }
+    
+    
+    #contactSub{
+        font-size: 10px;
+    }
+
+     
+    input{
+        width: 300px;
+    }
+    
+    textarea{
+        width: 300px;
+    }
+
+    nav ul li a img{
+        width: 18px;
+        height: 18px;
+        margin: 0 5px;
+    }
+}
