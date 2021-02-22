@@ -278,7 +278,6 @@ nav ul li a img:hover{
     .cardWrapper{
         width: 80%;
         height: 700px;
-        background: chocolate;
         display: flex;
         flex-direction: column;
         align-items: center;
